@@ -7,7 +7,8 @@ This is code for running Shapley Value Regression with Gini coefficients. After 
 Currently, this code only supports a linear regression model and a log-linear regression model. The log-linear regression model is the model in which the dependent variable is transformed using the logarithm function. In the future, more models will be added.
 
 ## Usage
-usage: ```
+usage: 
+```
 train.py [-h] [-v] [-i INPUT] [-o OUTPUT] [-m MODEL] [-s STEP]
 ```
 
@@ -39,6 +40,17 @@ Please specify the input and output files using "-i" for input and "-o" for outp
 3. specify the model you use by "-m".
 Currently, only "log-linear" and "linear" are supported. The default value is "linear".
 
+**Using The Code of the Shapley Regression Directly**
+
+You can also using Shapley regression directly without running in the command line. You can import the shapley model in your code:
+
+``` python
+import shapley #make sure your file is at the root directory
+```
+
+**Requirements**
+Numpy
+Sklearn
 
 ## TODO
 * Neural Network Model
