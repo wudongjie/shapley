@@ -10,7 +10,6 @@ Currently, this code only supports a linear regression model and a log-linear re
 usage: 
 ```
 train.py [-h] [-v] [-i INPUT] [-o OUTPUT] [-m MODEL] [-s STEP]
-```
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -24,7 +23,7 @@ optional arguments:
                         linear', default: linear
   -s STEP, --step STEP  steps for computing each Shapley value (default
                         10,000)
-
+```
 
 **Training**
 1. Prepare your training data and record the path of your data
@@ -45,11 +44,13 @@ Currently, only "log-linear" and "linear" are supported. The default value is "l
 You can also using Shapley regression directly without running in the command line. You can import the shapley model in your code:
 
 ``` python
-import shapley #make sure your file is at the root directory
+import shapley  # make sure your file is at the root directory
 ```
 
 **Requirements**
+
 Numpy
+
 Sklearn
 
 ## TODO
