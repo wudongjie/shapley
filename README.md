@@ -53,6 +53,14 @@ Numpy
 
 Sklearn
 
+Cython
+
+
+**Note**
+Please make sure that all dependent packages are installed. If there is an error about "missing the c_improve modult", please run "python setup.py build_ext --inplace".
+
+The default number of computational steps is 10,000. Please be sure that the maximum steps exceed 10,000. If not, please set the steps smaller than the maximum steps. 
+
 ## TODO
 * Neural Network Model
 
